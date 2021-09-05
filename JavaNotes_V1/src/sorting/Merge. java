@@ -5,8 +5,6 @@ package sorting;
 
 public class Merge {
 
-  // class GFG{
-
   // A utility function to swap two elements
   public static void swap(int[] arr, int i, int j) {
     int temp = arr[i];

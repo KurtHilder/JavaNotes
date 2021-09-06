@@ -33,10 +33,7 @@ public class JavaNotes_V1 {
 			arrlen = arrlen + 5000;
 			Randomiser randObj = new Randomiser(0, 50);
 			int[] rawArray = new int[arrlen];
-//		for (int i = 0; i < arrlen; i++) {
-//			int r = randObj.getRand();
-//			rawArray[i] = r;
-//		}
+			
 			rawArray = randObj.getRandArray(rawArray);
 			ArrayList<Integer> savedArray = new ArrayList<Integer>();
 			for (int p : rawArray) {
@@ -49,14 +46,14 @@ public class JavaNotes_V1 {
 			bubbleNormal = Bubble.sort(rawArray);
 			sw.stop();
 
-			System.out.println(" BUBBLE SOTYDNE");
+			System.out.println(" BUBBLE SOTING");
 			StopWatch sw1 = new StopWatch("quick");
 			int[] bubbleQuick;
 			sw1.start();
 			bubbleQuick = Bubble.sortQ(rawArray);
 			sw1.stop();
 
-			System.out.println(" selction sort");
+			System.out.println("SELECTION SORT");
 			StopWatch sw2 = new StopWatch("sort");
 			int[] sortNormal;
 			sw2.start();
